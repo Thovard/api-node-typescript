@@ -6,8 +6,10 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "./dist",
+    "typeRoots": ["./node_modules/@types", "src/types"],
     "strict": true
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*", "src/types/**/*.d.ts"],
+  "exclude": ["node_modules"],
+  "files":["src/types/express.d.ts"]
 }
